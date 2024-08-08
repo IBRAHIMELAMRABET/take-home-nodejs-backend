@@ -3,7 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "serve": "nodemon index.js",
+    "test": "jest"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^1.7.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "nodemon": "^3.1.4",
+    "take-home-nodejs-example": "file:"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
   }
 }
